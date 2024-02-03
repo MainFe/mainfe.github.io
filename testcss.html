@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #t1 {
+      border-radius: 50px 30px 20px 10px;
+      background: red;
+      width: 100px;
+      height: 100px;
+      cursor: wait;
+      cursor: zoom-in;
+      cursor: zoom-out;
+    }
+    #t2 a {
+      text-decoration: none;
+      cursor: grab;
+    }
+    #t3 {
+      overflow: hidden;
+    }
+    #t3 img {
+      float: left;
+      width: 10em;
+    }
+    #t4 {
+      height: 100px;
+    }
+    #t4 p {
+      border: 1px solid black;
+      display: block;
+      display: inline-block;
+      display: flex;
+      position: static;
+      position: fixed;
+      position: relative;
+      position: absolute; /* 부모의 relative속성이 상위 요소 */
+      position: sticky; /* relative와 fixed를 합친 요소 */
+      /*
+        static : top, right, left, bottom, z-index 불가
+      */
+    }
+    #t5 {
+      border: 1px solid black;
+      overflow: hidden;
+    }
+    #t5 div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      display: inline-block;
+    }
+    #t5 div:nth-child(2) {
+      background: blue;
+      position: relative;
+      bottom: -50px;
+    }
+    #t6 {
+      width: 8em;
+      height: 8em;
+      border: 1px solid black;
+      box-shadow: 30px 10px 5em red; /* x좌표, y좌표, 블러, 색 */
+    }
+  </style>
+</head>
+<body>
+  <div id="t1"></div>
+  <hr>
+  <div id="t2"><a href="#">decoration</a></div>
+  <hr>
+  <div id="t3">
+    <p>sadfadsfsdsadfsdfafaefsdfasdfasdfasdfasfasfasdfasdfasd</p>
+    <img src="media/animal-after.webp" alt="앵무새">
+    <p>hasfdafdasdfasdfasfdasfdasdfasdfsadfsadadsai</p>
+  </div>
+  <hr>
+  <div id="t4">
+    <p>hello world!</p>
+    <hr>
+  </div>
+  <div id="t5">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="t6">
+
+  </div>
+</body>
+</html>
